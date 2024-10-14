@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Metadados -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tênis Exclusivos - Conforto e Estilo</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fonte Externa -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Biblioteca de Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Biblioteca de Animações -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <!-- Header com Menu -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#home">Tênis Exclusivos</a>
+            </div>
+            <div class="mobile-menu">
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav id="menu" class="menu-hidden">
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre Nós</a></li>
+                        <li><a href="#products">Produtos</a></li>
+                        <li><a href="#reviews">Avaliações</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção Hero -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-right">
+                <h1>Tênis Exclusivos Você Encontra Aqui  <br></h1>
+                <p>Descubra o conforto e estilo dos nossos lançamentos exclusivos.</p>
+                <a href="#products" class="btn btn-primary">Ver Produtos</a>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <img src="img/nike.png" width="" alt="Tênis em destaque">
+            </div>
+            <button class="buy-btn">Comprar por R$299,00</button>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 data-aos="fade-up">Sobre Nós</h2>
+            <p data-aos="fade-up" data-aos-delay="200">Somos uma marca inovadora focada em proporcionar a melhor experiência em calçados esportivos. Nossos tênis combinam tecnologia avançada com design moderno.</p>
+            <div class="about-stats">
+                <div class="stat" data-aos="zoom-in">
+                    <i class="fas fa-users"></i>
+                    <h3>+10.000</h3>
+                    <p>Clientes Satisfeitos</p>
+                </div>
+                <div class="stat" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fas fa-shoe-prints"></i>
+                    <h3>+50</h3>
+                    <p>Modelos Exclusivos</p>
+                </div>
+                <div class="stat" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fas fa-award"></i>
+                    <h3>5</h3>
+                    <p>Prêmios de Inovação</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Produtos -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 data-aos="fade-up">Nossos Produtos</h2>
+            <div class="product-grid">
+                <!-- Produto 1 -->
+                <div class="product-card" data-aos="flip-left">
+                    <div class="product-image">
+                        <img src="img/nike.png" alt="Tênis Esportivo">
+                    </div>
+                    <div class="product-info">
+                        <h3>Tênis Esportivo</h3>
+                        <p>Ideal para corridas e atividades físicas intensas.</p>
+                        <span class="price">R$ 299,99</span>
+                        <a href="#" class="btn btn-secondary">Comprar</a>
+                    </div>
+                </div>
+                <!-- Produto 2 -->
+                <div class="product-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="product-image">
+                        <img src="img/nike.png" alt="Tênis Casual">
+                    </div>
+                    <div class="product-info">
+                        <h3>Tênis Casual</h3>
+                        <p>Conforto e estilo para o dia a dia.</p>
+                        <span class="price">R$ 249,99</span>
+                        <a href="#" class="btn btn-secondary">Comprar</a>
+                    </div>
+                </div>
+                <!-- Produto 3 -->
+                <div class="product-card" data-aos="flip-left" data-aos-delay="400">
+                    <div class="product-image">
+                        <img src="img/nike.png" alt="Tênis Clássico">
+                    </div>
+                    <div class="product-info">
+                        <h3>Tênis Clássico</h3>
+                        <p>Design atemporal com materiais premium.</p>
+                        <span class="price">R$ 349,99</span>
+                        <a href="#" class="btn btn-secondary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Avaliações -->
+    <section id="reviews" class="reviews">
+        <h2>Avaliações dos Clientes</h2>
+        <div class="reviews-container">
+            <div class="review">
+                <img src="img/review.png" alt="Cliente 1">
+                <p>"Serviço excepcional! Recomendo a todos."</p>
+                <h3>Maria Silva</h3>
+                <span>⭐️⭐️⭐️⭐️⭐️</span>
+            </div>
+            <div class="review">
+                <img src="img/review.png" alt="Cliente 2">
+                <p>"Uma experiência incrível, voltarei com certeza!"</p>
+                <h3>João Oliveira</h3>
+                <span>⭐️⭐️⭐️⭐️⭐️</span>
+            </div>
+            <div class="review">
+                <img src="img/review.png" alt="Cliente 3">
+                <p>"Atendimento nota 10 e equipe super profissional."</p>
+                <h3>Ana Costa</h3>
+                <span>⭐️⭐️⭐️⭐️⭐️</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 data-aos="fade-up">Fale Conosco</h2>
+            <p data-aos="fade-up" data-aos-delay="200">Tem alguma dúvida ou quer saber mais? Envie-nos uma mensagem!</p>
+            <form action="#" method="post" data-aos="fade-up" data-aos-delay="400">
+                <input type="text" name="name" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu Email" required>
+                <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <a href="#home">Tênis Exclusivos</a>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Início</a>
+                <a href="#about">Sobre</a>
+                <a href="#products">Produtos</a>
+                <a href="#reviews">Avaliações</a>
+                <a href="#contact">Contato</a>
+            </div>
+            <div class="social-media">
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>© 2024 Tênis Exclusivos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <!-- Biblioteca de Animações -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Biblioteca Swiper.js para o Slider -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Script Personalizado -->
+    <script src="js/index.js"></script>
+</body>
+</html>
