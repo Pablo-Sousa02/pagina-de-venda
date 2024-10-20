@@ -56,7 +56,7 @@ body.dark-mode {
 }
 
 h1, h2, h3 {
-    color: #ffffff;
+    color: #333;
 }
 html{
     scroll-behavior: smooth;
@@ -122,14 +122,23 @@ a {
 
 /* Header */
 .header {
-    background-color: #222;
+    background-color: #ffffff00;
     position: fixed;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     text-align: center;
+    
 }
-
+.logo img{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    bottom: 50px;
+}
+.logo img:hover{
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+}
 .header .container {
     display: flex;
     align-items: center;
@@ -138,14 +147,6 @@ a {
     text-align: center;
 }
 
-.logo a {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #ff0055;
-    text-align: center;
-}
-
-
 .mobile-menu {
     display: flex;
     justify-content: space-between;
@@ -153,9 +154,11 @@ a {
     padding: 10px 20px;
 }
 .menu-icon   {
-    font-size: 24px;
+    font-size: 40px;
     color: rgb(190, 17, 60);
     cursor: pointer;
+    bottom: 50px;
+    position: relative;
 }
 .menu-icon:hover{
     transition: .2s ;
@@ -556,11 +559,12 @@ nav.show {
     .menu-icon{
         position: relative;
         left: 350px;
+        bottom: 50px;
     }
     .menu-hidden{
         position: fixed;
         margin-top: 10px;
-        margin-right: -10px;
+        margin-right: 0px;
     }
     .buy-btn{
         font-size: 14px;
@@ -571,5 +575,11 @@ nav.show {
     }
     #home  h1{
         font-size: 35px;
+    }
+    .logo img{
+        display: flex;
+        position: relative;
+        bottom: 45px;
+        right: 20px;;
     }
 }
