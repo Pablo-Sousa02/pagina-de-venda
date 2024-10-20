@@ -27,3 +27,28 @@ navLinks.forEach(link => {
         }
     });
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    // Load the theme from localStorage if it exists
+    if (localStorage.getItem('theme') === 'dark') {
+        body.classList.add('dark-mode');
+        themeToggle.textContent = 'Light Mode';
+    }
+
+    // Toggle theme when the button is clicked
+    themeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        
+        // Update the button text based on the current theme
+        if (body.classList.contains('dark-mode')) {
+            themeToggle.textContent = 'Light Mode';
+            localStorage.setItem('theme', 'dark');
+        } else {
+            themeToggle.textContent = 'Dark Mode';
+            localStorage.setItem('theme', 'light');
+        }
+    });
+});
+

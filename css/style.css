@@ -5,15 +5,58 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
+:root {
+    --background-color: #000000;
+    --text-color: #000;
+    --primary-color: rgb(255, 255, 255);
+}
+
+body .hero{
+    background-color: var(--background-color);
+    color: #fff;
+}
+body .reviews{
+    background-color: var(--background-color);
     color: #333;
-    background-color: #f9f9f9;
-    scroll-behavior: smooth;
+}
+body .about{
+    background-color: var(--background-color);
+    color: #fff;
+}
+.header .footer {
+    background-color: var(--primary-color);
+}
+
+/* Dark Theme */
+body.dark-mode {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --primary-color: #333;
+}:root {
+    --background-color: #fff;
+    --text-color: #000;
+    --primary-color: #f00;
+}
+
+body  {
+    background-color: var(--background-color);
+    color: #fff;
+}
+
+.header, .footer {
+    background-color: var(--primary-color);
+}
+
+/* Dark Theme */
+body.dark-mode {
+    --background-color: #121212;
+    --text-color: #fff;
+    --primary-color: #333;
+    color: #fff;
 }
 
 h1, h2, h3 {
-    color: #222;
+    color: #ffffff;
 }
 html{
     scroll-behavior: smooth;
