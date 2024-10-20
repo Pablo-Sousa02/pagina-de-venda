@@ -54,6 +54,26 @@ body.dark-mode {
     --primary-color: #333;
     color: #fff;
 }
+.theme-button {
+    background-color: #ff005500;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.theme-button:hover {
+    color: #ff0055;
+}
+
+.theme-button i {
+    margin-right: 8px;
+}
 
 h1, h2, h3 {
     color: #333;
@@ -312,12 +332,13 @@ nav.show {
     max-width: 300px;
     text-align: center;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: transform 0.5s ease;
+    transition: transform 0.2s ease;
 }
 
 .product-card img:hover{
     transform: scale(1.20);
-    transition: .5s ease-in-out;
+    transition: .5s ease;
+    
 }
 
 .product-card img:hover {

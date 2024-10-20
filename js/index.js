@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load the theme from localStorage if it exists
     if (localStorage.getItem('theme') === 'dark') {
         body.classList.add('dark-mode');
-        themeToggle.textContent = 'Light Mode';
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
     }
 
     // Toggle theme when the button is clicked
@@ -43,12 +43,11 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Update the button text based on the current theme
         if (body.classList.contains('dark-mode')) {
-            themeToggle.textContent = 'Light Mode';
+            themeToggle.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
             localStorage.setItem('theme', 'dark');
         } else {
-            themeToggle.textContent = 'Dark Mode';
+            themeToggle.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
             localStorage.setItem('theme', 'light');
         }
     });
 });
-
